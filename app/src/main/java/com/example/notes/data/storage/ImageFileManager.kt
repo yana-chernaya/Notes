@@ -2,13 +2,15 @@ package com.example.notes.data.storage
 
 import android.content.Context
 import androidx.core.net.toUri
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
 import java.util.UUID
+import javax.inject.Inject
 
-class ImageFileManager(
-    private val context: Context
+class ImageFileManager @Inject constructor(
+    @ApplicationContext private val context: Context
 ) {
     private val imagesDir: File = context.filesDir
 

@@ -6,8 +6,6 @@ import com.example.notes.data.local.NoteDbModel
 import com.example.notes.data.local.NoteWithContentDbModel
 import com.example.notes.domain.ContentItem
 import com.example.notes.domain.Note
-import kotlin.collections.map
-import kotlin.collections.mapIndexed
 
 fun Note.toDbModel(): NoteDbModel {
     return NoteDbModel(id, title, isPinned, updatedAt)
