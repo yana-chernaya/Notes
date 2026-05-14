@@ -1,8 +1,7 @@
 package com.example.notes.data.repository
 
-import android.content.Context
 import com.example.notes.data.local.NoteDbModel
-import com.example.notes.data.local.NotesDatabase
+import com.example.notes.data.local.NotesDao
 import com.example.notes.data.mapper.toContentItemDbModels
 import com.example.notes.data.mapper.toDbModel
 import com.example.notes.data.mapper.toEntities
@@ -13,13 +12,12 @@ import com.example.notes.domain.Note
 import com.example.notes.domain.NotesRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class NotesRepositoryImpl(
-    context: Context
+class NotesRepositoryImpl @Inject constructor(
+    private val notesDao: NotesDao,
+    private val imageFileManager: ImageFileManager
 ) : NotesRepository {
-
-    private val notesDao = NotesDatabase.getInstance(context.applicationContext).notesDao()
-    private val imageFileManager = ImageFileManager(context.applicationContext)
 
     override suspend fun addNote(
         title: String,
