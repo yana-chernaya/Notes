@@ -17,5 +17,5 @@ val Grey300 = Color(0xFF3D3B3B)
 
 val Brown = Color(0xFF703410)
 
-val PinnedNotesColor = listOf(Yellow200, Purple, Blue200)
-val OtherNotesColor = listOf(Yellow100, Green, Blue100)
+val PinnedNotesColors = listOf(Yellow200, Purple, Blue200)
+val OtherNotesColors = listOf(Yellow100, Green, Blue100)

@@ -3,4 +3,12 @@
 
     <string name="just_now">Just now</string>
     <string name="h_ago">%1$s h ago</string>
+
+    <string name="cd_button_add_note">Button add note</string>
+    <string name="title_all_notes">All notes</string>
+    <string name="pinned">Pinned</string>
+    <string name="others">Others</string>
+    <string name="search">Search…</string>
+    <string name="cd_search_notes">Search Notes</string>
+    <string name="cd_first_image_from_note">The first image from note</string>
 </resources>
