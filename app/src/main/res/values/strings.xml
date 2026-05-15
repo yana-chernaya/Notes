@@ -21,4 +21,7 @@
     <string name="cd_image_from_gallery">Image from gallery</string>
     <string name="cd_icon_remove_image">Remove image</string>
     <string name="note_something_down">Note something down or click on image to upload image</string>
+
+    <string name="title_edit_note">Edit note</string>
+    <string name="cd_delete_note">Delete note</string>
 </resources>
