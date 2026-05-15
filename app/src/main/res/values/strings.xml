@@ -11,4 +11,14 @@
     <string name="search">Search…</string>
     <string name="cd_search_notes">Search Notes</string>
     <string name="cd_first_image_from_note">The first image from note</string>
+
+    <string name="title_create_note">Create note</string>
+    <string name="cd_button_back">Button back</string>
+    <string name="cd_button_add_photo">Button Add photo from gallery</string>
+    <string name="title">Title</string>
+    <string name="button_save_note">Save Note</string>
+
+    <string name="cd_image_from_gallery">Image from gallery</string>
+    <string name="cd_icon_remove_image">Remove image</string>
+    <string name="note_something_down">Note something down or click on image to upload image</string>
 </resources>
